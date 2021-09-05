@@ -8,6 +8,7 @@ import black from "./black.png";
 import green from "./green.png";
 import { motion, AnimatePresence } from "framer-motion";
 import Modal from "./Modal";
+import Accordion from "./Accordion";
 
 function App() {
   const [toggle, setToggle] = useState(true);
@@ -24,12 +25,13 @@ function App() {
       <Container>
         <h2>Super Cool</h2>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
-        <Modal toggle={toggle} setToggle={setToggle}>
+        {/* <Modal toggle={toggle} setToggle={setToggle}>
           <Card style={{ background: "var(--purp)" }}>
             <h3>Some card</h3>
             <img src={purp} />
           </Card>
-        </Modal>
+        </Modal> */}
+        <Accordion />
         <CardGrid>
           <Card style={{ background: "var(--purp)" }}>
             <h3>Some card</h3>
