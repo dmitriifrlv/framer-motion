@@ -16,6 +16,7 @@ import Modal from "./Modal";
 import Accordion from "./Accordion";
 import Nav from "./Nav";
 import { Squares } from "./Squares";
+import { Slideshow } from "./Slideshow";
 
 function App() {
   const [isActive, setIsActive] = useState(true);
@@ -35,6 +36,7 @@ function App() {
         <h1>Header</h1>
       </Header>
       <Container>
+        <Slideshow />
         <Squares />
         <h2>Super Cool</h2>
         <button onClick={() => setToggle(!toggle)}>Toggle</button>
